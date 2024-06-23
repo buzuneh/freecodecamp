@@ -1,0 +1,228 @@
+
+html{
+    top:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:arial, sans-serif;
+    background-color:rgba(0,0,0,0.1);
+    }
+    .delivery-icon{
+      margin-left:40px;
+    }
+    #header{
+    position:sticky;
+      top:0;
+      z-index:99;
+    background-color:#ddd;
+    }
+    #header-img{
+      width:200px;
+      height: 10vh;
+      margin-left:5%;
+    }
+    
+    .header-container{
+    width:100%;
+    padding:2rem 0;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+     background-color:rgba(255,255,255,0.75);
+    
+    }
+    
+    #nav-bar{
+       margin-right:2rem;
+    }
+    .nav-link{
+      text-decoration:none;
+      font-size:1.2rem;
+      color:rgba(0,0,0,0.8);
+      font-weight:500;
+    }
+    nav ul{
+      list-style:none;
+      display: flex;
+    align-items:center;
+    gap:2rem;
+    }
+    #header-title{
+      text-align:center;
+      font-weight:700;
+      padding:20px 0;
+      margin: 10px;
+     background-color:rgba(255,255,255,0.75);
+    }
+    #vedio-container{
+       display:flex;
+      flex-direction:colum;
+      justify-content:center;
+      margin: 10px;
+     background-color:rgba(255,255,255,0.75);;
+      padding:20px 0;
+    }
+    
+    .delivery-container{
+    display: flex;
+    gap:20px;
+    justify-content:center;
+    background-color:rgba(255,255,255,0.75);
+    align-items:center;
+    margin:50px 10px;
+    }
+    .delivery-description-container{
+    margin:20px auto;
+    }
+    .delivery-description{
+    text-align:justify;
+    margin-right:10%;
+    }
+   .delivery-icon{
+   margin-left: 10%;
+    width:300px;
+    }
+    #pricing-section{
+      background-color:rgba(255,255,255,0.75);
+    display:grid;
+    grid-gap:20px;
+     grid-template-columns: repeat(3, 2fr);
+    margin: 10px;
+    
+    }
+    .pricing-container{
+      position: relative;
+      display:flex;
+      width:75%;
+      flex-direction:column;
+      justify-content:center;
+      border:1px solid #aaa;
+      height:40vh;
+      margin: 10px auto;
+      overflow: hidden;
+    }
+    .pricing-container::before{
+    padding-left:50px;
+    width: 140px;
+    content:'New';
+    margin-left:-40px;
+    color:yellow;
+    transform: rotate(-45deg);
+    background-color:red;
+    }
+    .price-header{
+      width:100%;
+      height:50px;
+      text-align:center;
+       font-weight:400;
+        background-color:#009ff5;
+        padding-top:5%;
+          padding-bottom:5%;
+    }
+    .product{
+       width:95%;
+       height:100vh;
+       margin:auto;
+      background-color:#eee;
+      
+    }
+    
+    #form{
+     display:flex;
+      flex-direction:column;
+      justify-content:center;
+      justify-items:center;
+      margin: 10px;
+      background-color:rgba(255,255,255,0.55);
+      padding:20px 0;
+    }
+    #select{
+        padding:6px 20px;
+      font-size:1.2rem;
+      margin:5px auto;
+       outline:none;
+      border:none;
+      background-color:#ef9b0be6;
+      border-radius:30px;
+    }
+    #select:hover{
+        cursor:pointer;
+        background-color:#ef9b0bb5;
+    }
+    #email{
+      width:380px;
+      font-size:1.2rem;
+      font-weight:70;
+      margin: 5px auto;
+      padding: 2px 20px ;
+      outline:none;
+      border:1px solid;
+     
+    }
+    #email:focus{
+       background-color:#bfb;
+       border:1px solid green;
+    }
+    #submit{
+      padding:6px 50px;
+      font-size:1.2rem;
+      margin:5px auto;
+       outline:none;
+      border:none;
+      background-color:#0bcdef;
+      border-radius:30px;
+    }
+    #submit:hover{
+      opacity:0.7;
+      cursor:pointer;
+      background-color:#0bcdef;
+    }
+    #footer{
+     height:300px;
+      display:flex;
+      justify-content:center;
+      justify-items:center;
+      flex-direction:column;
+        background-color:#aaaaaa;
+     margin: 10px;
+    }
+    #footer ul{
+      
+       display:flex;
+      justify-content:center;
+      justify-items:center;
+       list-style:none;
+       gap:2rem;
+     
+    }
+    #copyright{
+        margin-top:0;
+        font-weight:600;
+        text-align:center;
+         color:rgba(0,0,0,0.75);
+    }
+    #foot-link{
+       color:rgba(0,0,0,0.75);
+       font-weight:600;
+       margin-bottom:10px;
+      text-decoration:none;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      #pricing-section, .header-container {
+        grid-template-columns: 1fr;
+        margin:10px;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+     .header-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px;
+    }
+    #video{
+      width:95%;
+      height:30vh;
+    }
+    
+    }
+        

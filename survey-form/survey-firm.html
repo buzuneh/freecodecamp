@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>web training survey form</title>
+ <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+<h1 id="title">Web development training request survey form</h1>
+<p id="description">Thank you for your time filling help us to planning our survey training</p>
+<form id="survey-form">
+<label id="name-label" for="name">Name</label><input id="name" name"name" placeholder="Enter your name" type="text" required>
+<label id="email-label" for="email">Email</label><input id="email" type="email" placeholder="Enter your email value="email" name="email" required>
+<label id="number-label" for="number">Age (optional)</label><input id="number" type="number" placeholder="Age" value="number" min="14" max="100">
+<label for="training-level">Option of your training level</label>
+<select id="dropdown"name="training-level">
+<option value="">Select your training level</option>
+<option value="beginer">Beginer</option>
+<option value="intermediate">Intermediate</option>
+<option value="advanced">Advanced</option>
+</select>
+<label id="gender">Gender</label>
+<label for="male"><input type="radio" value="male" id="male" name="gender" checked>Male</label>
+<label for="female"><input type="radio" value="female" id="female" name="gender">Female</label>
+<label id="recommend">Would you recommend our training to others?</label>
+<label for="highly"><input type="radio" name="recommend" value="highly"checked >Highly</label>
+<label for="sometimes "><input type="radio" name="recommend" value="sometimes">Sometimes </label>
+<label for="not"><input type="radio" name="recommend" value="not">Not at all</label>
+<label for="training">On what area you need to take training? </label>
+<select name="training-need" id="training">
+<option value="">Select the training</option>
+<option value="frontend">Frontend development</option>
+<option value="backend">Backend development</option>
+<option value="fullstack">Full stack development </option>
+</select>
+<label id="course">Which course do you need to take?</label>
+<label for="html"><input class="inline" type="checkbox" id="html" name="course" value="html">Html</label>
+<label for="css"><input class="inline" type="checkbox" id="css" name="course" value="css">Css</label>
+<label for="javascript"><input class="inline" type="checkbox" name="course" id="javascript" value="javascript">JavaScript</label>
+<label for="python"><input class="inline" type="checkbox" name="course" id="python" value="python">Python</label>
+<label for="comment">Any comment or suggestion</label>
+<textarea id="comment" type="textarea" name="comments" rows="6" cols="30" placeholder="Enter your comment here ..."></textarea>
+<input id="submit" type="submit" value="Submit">
+</form>
+</body>
+</html>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+

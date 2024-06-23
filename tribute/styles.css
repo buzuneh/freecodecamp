@@ -1,0 +1,31 @@
+body{
+  right:0;
+  left:0;
+  top:0;
+  box-sizing:border-box;
+}
+header{
+width:100%;
+background-color:rgba(0,0,0,0.2);
+height:20vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+margin-bottom:20px;
+}
+h2{
+  font-size:0.9rem;
+}
+img{
+  display:block;
+}
+#img-div{
+  background-color:rgba(0,0,0,0.2);
+}
+#image{
+max-width:100%;
+height:auto;
+margin-left:auto;
+margin-right:auto;
+}

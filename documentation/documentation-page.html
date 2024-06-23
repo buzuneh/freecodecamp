@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="styles.css" rel="stylesheet">
+<title>MDN CSS curriculum document</title>
+</head>
+<body>
+<main id="main-doc">
+<nav id="navbar">
+<header>CSS fundamentals
+  </header>
+<ul>
+  <div class="devide"></div>
+<li><a class="nav-link" href="#Key_CSS_syntax">Key CSS syntax</a></li>
+<div class="devide"></div>
+<li><a class="nav-link" href="#Selectors">Selectors</a></li>
+<div class="devide"></div>
+<li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+<div class="devide"></div>
+<li><a class="nav-link" href="#Box_model">Box model</a></li>
+<div class="devide"></div>
+<li><a class="nav-link" href="#Handing_conflicts">Handing conflicts</a></li>
+<div class="devide"></div>
+<li><a class="nav-link" href="#Value_units">Value units</a></li>
+<div class="devide"></div>
+<li><a class="nav-link" href="#Sizing">Sizing</a></li>
+<div class="devide"></div>
+<li><a class="nav-link" href="#Backgrounds_and_borders">Backgrounds and borders</a></li>
+<div class="devide"></div>
+<li><a class="nav-link" href="#Reference">Reference</a></li>
+</ul>
+</nav>
+<section class="container">
+<section id="Key_CSS_syntax" class="main-section">
+<header>Key CSS syntax</header>
+<p>CSS (Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood? This article explains what CSS is with a simple syntax example and also covers some key terms about the language.</p>
+<p>In the Introduction to HTML module, we covered what HTML is and how it is used to mark up documents. These documents will be readable in a web browser. Headings will look larger than regular text, paragraphs break onto a new line and have space between them. Links are colored and underlined to distinguish them from the rest of the text. What you are seeing are the browser's default styles — very basic styles — that the browser applies to HTML to make sure that the page will be basically readable even if no explicit styling is specified by the author of the page.
+
+</p>
+<article>
+<ul>
+<li>
+The purpose of CSS — style, 
+layout, and provide other visual
+enhancements to web pages (such as animation).
+</li>
+<li>Key CSS syntax:
+<ul>
+<li>Rules</li>
+<li>Selectors</li>
+<li>Declaration</li>
+<li>Properties</li>
+<li>Values</li>
+</ul>
+</li>
+<li>
+Default browser styles — understand 
+that the browser provides default CSS 
+styling to HTML elements so that it is in 
+some way usable even with no user-defined styles at all:
+<ul>
+<li>
+Understand also therefore that HTML has nothing to do with styling.
+</li>
+<li>
+Use this to reinforce the idea of separating semantics and structure (semantic HTML) from presentation (CSS), and not using presentational markup.
+</li>
+<li>
+Study CSS resets, first to prove that browser styles exist and show what a page looks like when they are removed, but also as a technique for providing a blank canvas for developers to build styles on top of.
+</li>
+</ul>
+</li>
+<li>
+Applying CSS to an HTML document — inline styles, internal stylesheets, external stylesheets:
+Why external stylesheets are usually the best option.
+</li>
+</ul>
+</article>
+</section>
+<section id="Selectors" class="main-section">
+<header>Selectors</header>
+<article>
+  <p>In CSS, selectors are used to target the HTML elements on our web pages that we want to style. There are a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style. In this article and its sub-articles we'll run through the different types in great detail, seeing how they work.
+</p>
+<p>What is a selector?</p>
+<ul>
+  <li>Basic selectors — element type, class, ID</li>
+  <li>Selector lists.</li>
+  <li>Combinators.</li>
+  <li>Pseudo-classes and pseudo-elements.</li>
+  <li>Attribute selectors.</li>
+  </ul>
+  </article>
+  <section id="Hello_world" class="main-section">
+<header>Hello world</header>
+ 
+    <p> To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+    <article class="code">
+  <code>
+function greetMe(yourName) { alert("Hello " + yourName); }
+greetMe("World");
+</code>
+</article>
+<p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+    </article>
+  <article class="code">
+  <code>{
+  color: blue;
+}
+.special {
+  color: blue;
+}
+</code>
+</article>
+</article>
+</section>
+<section id="Box_model" class="main-section">
+<header>Box model</header>
+<article>
+<p>Everything in CSS has a box around it, and understanding these boxes is key to being able to create more complex layouts with CSS, or to align items with other items. In this lesson, we will take a look at the CSS Box Model. You'll get an understanding of how it works and the terminology that relates to it.</p>
+<ul>
+  <li>Block and inline elements </li>
+  <li>The different boxes that make up an element and how to style them: <ul><li>width and height</li>
+  <li>margin.</li>
+  <li>border.</li>
+  <li>padding.</li>
+  </ul>
+  </li>
+  <li>The alternative box model accessed via box-sizing: border-box, and why this is easier to understand (and how it differs from) the standard box model. 
+  </li>
+</ul>
+ <article class="code">
+<code>{<br/>
+  border: 2px solid rebeccapurple;<br/>
+  padding: .5em;<br/>
+}</code>
+</article>
+</article>
+</section>
+<section id="Handing_conflicts" class="main-section">
+<header>Handing conflicts</header>
+<article>
+<ul>
+  <li>Understand how rules can conflict in CSS.</li>
+   <li>Inheritance</li>
+    <li>The cascade</li>
+     <li>The concepts that govern the outcome of CSS conflicts:
+       <ul>
+          <li>Specificity.</li>
+       <li>Source order.</li>
+        <li>Importance.</li>
+       </ul>
+     </li>
+     
+  </ul>
+</article>
+</section>
+<section id="Value_units" class="main-section">
+<header>Value units</header>
+<article>
+<p>CSS rules contain declarations, which in turn are composed of properties and values. Each property used in CSS has a value type that describes what kind of values it is allowed to have. In this lesson, we will take a look at some of the most frequently used value types, what they are, and how they work.
+</p>
+<ul>
+  <li>Understand that property values can take many different types, and what these types represent:
+    <ul>
+      <li>Numbers, lengths, and percentages.</li>
+      <li>Ems and rems.</li>
+      <li>Colors.</li>
+      <li>Images.</li>
+      <li>Positions.</li>
+      <li>Strings and identifiers.</li>
+      <li>Functions.</li>
+      </ul></li>
+      <li>Understand what absolute and relative units are, and the difference between them.</li>
+  </ul>
+  <article class="code">
+<code>
+  {<br/>
+  color: black;<br/>
+  background-color: rgb(197 93 161);<br/>
+}
+.wrapper {<br/>
+  font-size: 1em;<br/>
+}<br/>
+
+.px {<br/>
+  width: 200px;<br/>
+}<br/>
+
+.vw {<br/>
+  width: 10vw;<br/>
+}<br/>
+
+.em {
+  width: 10em;<br/>
+}</code>
+</arsticle>
+</article>
+</section>
+<section id="Sizing" class="main-section">
+<header>Sizing</header>
+<article>
+<p>In the various lessons so far, you have come across a number of ways to size items on a web page using CSS. Understanding how big the different features in your design will be is important. So, in this lesson we will summarize the various ways elements get a size via CSS and define a few terms about sizing that will help you in the future.</p>
+<ul>
+  <li>Intrinsic size.</li>
+    <li>Setting absolute and percentage sizes.</li>
+      <li>min-/max-width and min-/max-height.</li>
+        <li>Viewport units.</li>
+</ul>
+<article class="code">
+  <code>
+img {<br/>
+  border: 5px solid darkblue;<bpr/>
+}<br/>
+.box {<br/>
+  border: 5px solid darkblue;<br/>
+}<br/>
+.box {<br/>
+  border: 5px solid darkblue;<br/>
+  height: 150px;<br/>
+  width: 200px;<br/>
+}</code>
+</article>
+<article>
+</section>
+<section id="Backgrounds_and_borders"  class="main-section">
+  <header>Backgrounds and borders</header>
+  <article>
+    <p>In this lesson, we will take a look at some of the creative things you can do with CSS backgrounds and borders. From adding gradients, background images, and rounded corners, backgrounds and borders are the answer to a lot of styling questions in CSS.
+</p>
+<p>The CSS background property is a shorthand for a number of background longhand properties that we will meet in this lesson. If you discover a complex background property in a stylesheet, it might seem a little hard to understand as so many values can be passed in at once.</p>
+<article class="code">
+  <code>
+ .box {<br/>
+  background-color: #567895;<br/>
+}<br/>
+h2 {<br/>
+  background-color: black;<br/>
+  color: white;<br/>
+}<br/>
+span {<br/>
+  background-color: rgb(255 255 255 / 50%);<br/>
+
+}</code>
+</article>
+    </article>
+</section>
+<section id="Reference"  class="main-section" >
+<header>Reference</header>
+<article>
+<p>The source of this document is <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN.</a></p>
+</article>
+</section>
+</section>
+</main>
+</body>
+<html>
