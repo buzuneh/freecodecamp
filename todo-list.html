@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>todolist</title>
+  <style>
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+    .tdin{
+      display: flex;
+      grid-gap: 5px
+     
+    }
+    .dlt{
+      background-color: red;
+      color: white;
+      border: none;
+      float: right;
+      padding: 5px;
+    }
+    .srt{
+      background-color: blue;
+      color: white;
+      border: none;
+      padding: 5px 15px;
+    }
+    .ad{
+      background-color: green;
+      color: white;
+      border: none;
+      padding:5px 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Todo List</h1>
+  
+<form action="" class="tdin" >
+    <input placeholder="Enter todo name" 
+  class="js-input"  required>
+ 
+  
+  <input   placeholder="Select date"  
+  type="date"  class="toDate" required>
+ 
+  <button onclick="
+  todoList();
+  "class="ad">Add</button>
+  
+  <button onclick="
+  if(!toddo){
+  alert("no")}else{
+     rend();
+     toddo.sort();
+     rend();
+     }
+   " class="srt">sort</button>
+  
+</form>
+  
+  
+  
+  <div class="js-list"></div>
+  
+  <script>
+  const toddo =  [];
+   
+    rend();
+  
+  function rend(){
+    
+  adHtml ='';
+  
+  for(let i=0; i< toddo.length; i++){
+    const toObbj = toddo[i];
+    const {name, dudate} = toObbj;
+   
+   const html=`<p>
+    ${name} ${dudate}
+    <button onClick="
+    toddo.splice(${i},1);
+    rend();
+    "class="dlt">delete</button>  
+    <p/>`
+    adHtml += html;
+  }
+  
+   const listed = document
+   .querySelector('.js-list');
+    listed.innerHTML= adHtml;
+  }
+  
+    function todoList(){ 
+    const inputEl= document
+    .querySelector('.js-input');
+    const name = inputEl.value
+    
+    const inpudt=document
+    .querySelector('.toDate');
+    const dudate=inpudt.value;
+    
+    inpudt.value='';
+    toddo.unshift({name:name, dudate:dudate});
+    inputEl.value='';
+    rend();
+    }
+  </script>
+</body>
+</html>
