@@ -1,0 +1,130 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+.weather-container{
+        display: flex;
+        position: relative;
+        width: fit-content;
+        height: 100%;
+        justify-content: center;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+}
+.main-container{
+    display: grid;
+    width: 400px;
+    height: 200%;
+    margin-top: 20px;
+    column-gap: 50px;
+    background-image: linear-gradient(rgb(138, 178, 100), rgb(0, 145, 255),rgba(0, 153, 255, 0.943));
+    border-radius: 14px;
+   margin-bottom: 0px;
+}
+.input{
+    position: relative;
+    border: none;
+    height: 60px;
+  text-align: center;
+    font-size: 32px;
+    border-radius: 35px;
+    width: 300px;
+    background-color: lightblue;
+}
+.search-btn{
+    position: absolute;
+    right: 0px;
+    background-color: transparent;
+    border: none;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
+}
+.win-humd{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+ .temp{
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    cursor: pointer;
+}
+.temp1{
+    font-size: 5em;
+    color: white;
+    cursor: pointer;
+} 
+
+.temp-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.country{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: white;
+}
+
+.temp-image, .img {
+    width: 120px;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+      justify-content: center;
+  }
+.win-humd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.wind,.clod{
+    display: flex;
+    width: 20px;
+    align-items: center;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.89);
+    font-weight:200;
+    width: fit-content;
+}
+.hum,.win{
+    width: 50px;
+}
+.time{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+sup{
+    color:white;
+}
+#sup{
+    font-size:0.6em;
+
+}
+.select{
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+ 
+}
