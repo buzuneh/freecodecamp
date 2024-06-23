@@ -1,13 +1,13 @@
-
 body{
-    box-sizing: border-box;
     font-family:Arial, san sarif;
-    width:100%;
+    width:100vw;
+    box-sizing:border-box;
     background:linear-gradient(45deg, rgba(2,2,2,0.6)50%, rgba(1,1,1,0.8)50%);
     }
     #title{
     text-align:center;
     color:gold;
+    margin:auto;
     }
     #description{
     text-align:center;
@@ -16,46 +16,46 @@ body{
     color:white;
     }
     #survey-form{
-    width:80%;
-    opacity: 0.8;
-    margin: 0 auto;
+      margin:auto;
+    width:83vw;
+    opacity: 0.9;
     font-weight:800;
-    background-color:rgba(255,3,55,0.9);
-    padding: 20px;
-    color: white;
+    background-color:rgba(12,80,80,0.9);
+    color: lightblue;
+    padding:1rem;
     border-radius:5px;
     box-shadow:1px,1px,4px 0 black;
     }
     #name,#email,
     #number,
     textarea{
-    width:90%;
+    width:82vw;
     padding:10px;
     display:block;
-    background-color:white;
-    border-style:none;
+    background-color:rgba(255,255,255,0.9);
     outline: 0;
     
+    
     }
+    
     input[type="radio"] .inline,
     label,#submit{
     margin: 10px 0;
-    border-style:none;
     outline: 0;
     display: block;
-    padding:10px;
     }
     
     select{
-    width: 90%;
-    padding: 10px;
-    background-color:white;
+    width:82vw;
+    padding: 12px;
+    background-color:rgba(255,255,255,0.9);
     }
     #submit{
-    width:92%;
-    padding: 12px;
+    width:82vw;
+    padding:1rem;
     font-size:1.2em;
     border:none;
+    
     background-color:green;
     color:white;
     font-weight:bold;
@@ -63,5 +63,17 @@ body{
     }
     #submit:hover{
     background-color:rgba(0,255,0,0.75);
+    cursor:pointer;
     }
+    @media sreen and (max-width: 600px){
+      #survey-form{
+        width:100%;
+      margin:5rem;
+    }
+    #submit{
+      width:100%;
+    }
+    }
+    
+    
     
