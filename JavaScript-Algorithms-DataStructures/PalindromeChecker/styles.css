@@ -48,6 +48,9 @@ h1{
     color:white;
     border-radius:5px;
   }
+  #input-btn{
+    display: flex;
+  }
   #check-btn:hover{
     cursor:pointer;
   }
