@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:arial, sans-serif;
+}
+main{
+ padding-top:5%;
+}
+.container{
+  width:260px;
+  height:500px;
+  display:flex;
+  flex-direction:column;justify-content:center;
+  align-items:center;background-color:black;
+  margin:auto;
+  border-radius:25px;
+  box-shadow: 2px 1px 10px rgba(0,0,0,0.7)
+}
+.header{
+  height:30px;
+}
+.fr-camera{
+background-color:white;
+height:10px;
+width:10px;
+border-radius:50%;
+}
+.inner-container{
+  display:flex;
+  flex-direction:column;
+  width:90%;
+  height:400px;
+  justify-content:center;
+  align-items:center;
+background-color:white;
+}
+label{
+  margin-top:10px;
+  padding:5px;
+  font-size:18px;
+  font-weight:550;
+}
+#user-input{
+  width:85%;
+padding:0.6rem;
+border-radius:10px;
+}
+.output{
+  width:100%;
+  height:400px;
+  
+}
+#results-div{
+  display:flex;
+  flex-direction:column;
+  margin: 1px;
+  padding:5px;
+  font-size:1.4em;
+  text-align:center;
+  font-weight:640;
+
+  height:270px;
+  overflow:hidden;
+}
+.btn-container{
+  display:flex;
+  gap:10px;
+  padding-top:20px;
+  width:100%;
+  justify-content:center;
+background-color:black;
+}
+button{
+  padding:7px 25px;
+  font-weight:600;
+  border-radius:5px;
+  background:linear-gradient(180deg, rgba(277,277,277,0.9) 50%, lightblue 50%)
+}
+button:hover{
+  cursor:pointer;
+   background:linear-gradient(45deg,lightblue 50%, rgba(277,277,277,0.5) 50%)
+}
